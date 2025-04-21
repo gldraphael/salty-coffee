@@ -1,0 +1,23 @@
+# The salty coffee
+
+An SDL/C++ project I worked on as part of a college CIA (Cumulative Internal Assessment) assignment. 
+
+I found its source code in my Google Drive account. While it's not code I'm particularly proud of, I wanted to get it running just because.
+
+## Building the project
+
+The following instructions were tested on Ubuntu 22.04
+
+1. Install SDL 1.2 development files:
+	```sh
+	sudo apt install \
+		libsdl1.2-dev \
+		libsdl-image1.2-dev \
+		libsdl-mixer1.2-dev \
+		libsdl-ttf2.0-dev
+	```
+2. Install `cmake`:
+  ```sh
+  sudo apt install cmake
+  ```
+
