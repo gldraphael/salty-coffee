@@ -1,7 +1,7 @@
 // 17 January, 2012
 
 #pragma once
-#include "game.h"
+#include <Game.h>
 #include <vector>
 #include "Scene.h"
 #include <AudioEngine.h>

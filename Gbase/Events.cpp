@@ -1,5 +1,4 @@
 #include "Events.h"
-#include <SDL.h>
 #include "Game.h"
 
 //namespace GameBase

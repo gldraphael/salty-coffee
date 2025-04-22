@@ -31,7 +31,7 @@
 		SDL_Surface* Window();
 
 		//Clears the screen with color
-		void Clear (Color& color);
+		void Clear (const Color& color);
 
 		//Draws the Surface.
 		void Draw();

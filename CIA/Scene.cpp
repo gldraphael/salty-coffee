@@ -1,7 +1,7 @@
 // 17 January, 2013
 
 #include "Scene.h"
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 Scene::Scene(Game* game, int allocatedFrames, Transition* Transition)
 {

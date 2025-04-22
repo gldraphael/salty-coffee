@@ -2,7 +2,7 @@
 
 #include "Transition.h"
 #include <Timer.h>
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 Transition::Transition(int allocatedFrames)
 {

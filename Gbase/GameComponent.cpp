@@ -1,6 +1,8 @@
 #include "GameComponent.h"
 #include "Game.h"
 
+#include <algorithm>
+
 //namespace GameBase
 //{
 GameComponent::GameComponent(Game* game)

@@ -2,10 +2,10 @@
 
 
 #ifndef _GAME_BASE_LIBRARY_GAME_H_
-#define	_GAME_BASE_LIBRARY_GAME_H_
+#define _GAME_BASE_LIBRARY_GAME_H_
 
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "GameComponent.h"
 //#include "ScreenManager.h"			// Includes Events

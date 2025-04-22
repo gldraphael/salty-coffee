@@ -29,7 +29,7 @@ Rectangle::Rectangle (Point xy, Point width_height)
 	this->Height = width_height.Y;
 }
 
-Rectangle::operator SDL_Rect()
+Rectangle::operator SDL_Rect() const
 {
 	SDL_Rect myRect;
 	myRect.x = static_cast<Sint16>(X);

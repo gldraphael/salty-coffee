@@ -1,5 +1,5 @@
 #include "GameBaseException.h"
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 //namespace GameBase
 //{
@@ -13,7 +13,7 @@
 		this->message = SDL_GetError();
 	}
 
-	const char* GameBaseException::what() const
+	const char* GameBaseException::what() const noexcept
 	{
 		return message.c_str();
 	}

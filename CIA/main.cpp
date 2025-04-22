@@ -1,11 +1,12 @@
 #include "IA.h"
-#include "Message.h"
+// #include "Message.h"
+#include <iostream>
 
 // Application Entry Point
 int main(int argc, char** argv)
 {
 	// True if the Project should run in a debug mode
-	bool debug = Message::Show("CG Project", "Run in debug mode?", Message::Buttons::YES_NO);
+	bool debug = true; // Message::Show("CG Project", "Run in debug mode?", Message::Buttons::YES_NO);
 	
 	try
 	{
@@ -23,15 +24,15 @@ int main(int argc, char** argv)
 
 	catch (GameBaseException& ge)
 	{
-		Message::Show ( "!!! CG Project", const_cast<char*> ( ge.what()) ); 
+    std::cerr << "!!! CG Project: " << const_cast<char*> (ge.what()) << std::endl; 
 	}
 	catch (std::exception& e)
 	{
-		Message::Show ("!!! CG Project", const_cast<char*> (e.what()) ); 
+    std::cerr << "!!! CG Project: " << const_cast<char*> (e.what()) << std::endl;; 
 	}
 	catch(...)
 	{
-		Message::Show("!!! CG Project", "Unhandled exception");
+    std::cerr << "!!! CG Project: " << "Unhandled exception" << std::endl;;
 	}
 
 #pragma endregion

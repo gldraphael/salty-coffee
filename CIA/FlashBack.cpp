@@ -1,6 +1,6 @@
 // 18th January, 2012
 
-#include "Flashback.h"
+#include "FlashBack.h"
 #include <Color.h>
 #include "IA.h"
 

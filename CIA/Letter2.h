@@ -1,5 +1,5 @@
 #pragma once
-#include "scene.h"
+#include "Scene.h"
 #include <Surface.h>
 #include <SpriteBatch.h>
 #include <FontManager.h>

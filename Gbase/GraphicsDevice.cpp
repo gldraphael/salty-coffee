@@ -61,7 +61,7 @@
 		SDL_WM_ToggleFullScreen(window->_surface);
 	}
 
-	void GraphicsDevice::Clear (Color& color)
+	void GraphicsDevice::Clear (const Color& color)
 	{
 		SDL_FillRect(window->_surface,
 			&(SDL_Rect) Rectangle(0, 0, static_cast<float>(viewport.Width), static_cast<float>(viewport.Height) ),

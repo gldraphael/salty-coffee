@@ -1,5 +1,5 @@
 #include "AudioEngine.h"
-#include <Extension/SDL_mixer.h>
+#include "SDL/SDL_mixer.h"
 #include "GameBaseException.h"
 
 AudioEngine::AudioEngine(int frequency, AudioEngine::Format format, int channels, int chunk_size)

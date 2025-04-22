@@ -4,7 +4,7 @@
 
 // Forward Declaration
 //typedef struct SDL_rect SDL_rect;
-#include <SDL_video.h>
+#include "SDL/SDL_video.h"
 
 //Represents a Rectangle
 struct /*GCALL*/ Rectangle
@@ -50,5 +50,5 @@ struct /*GCALL*/ Rectangle
 	bool Intersects (Rectangle A);
 	bool operator ^ (Rectangle A);
 
-	operator SDL_Rect();
+	operator SDL_Rect() const;
 };

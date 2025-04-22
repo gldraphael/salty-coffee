@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SDL_video.h>
+#include "SDL/SDL_video.h"
 struct Color
 {
 private:

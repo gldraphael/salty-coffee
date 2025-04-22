@@ -3,9 +3,10 @@
 #ifndef _GAME_BASE_LIBRARY_DRAWABLE_GAME_COMPONENT_H_
 #define	_GAME_BASE_LIBRARY_DRAWABLE_GAME_COMPONENT_H_
 
-#include "gamecomponent.h"
+#include "GameComponent.h"
+#include "GraphicsDevice.h"
 
-class GraphicsDevice;
+// class GraphicsDevice;
 
 //namespace GameBase
 //{
@@ -16,7 +17,7 @@ protected:
 	int drawOrder;
 public:
 	
-	void DrawableGameComponent::ChangeUpdateOrder(int order);
+	void ChangeUpdateOrder(int order);
 	GraphicsDevice* GraphicsDevice;
 	DrawableGameComponent(Game* game);
 	int DrawOrder();

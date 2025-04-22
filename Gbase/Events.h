@@ -3,7 +3,7 @@
 #ifndef _GAME_BASE_LIBRARY_EVENTS_H_
 #define _GAME_BASE_LIBRARY_EVENTS_H_
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 //namespace GameBase
 //{
 
@@ -17,7 +17,7 @@ public:
 	Events();
 	~Events();
 	Events(const Events &e);
-	Events& Events::operator=(const Events& source);
+	Events& operator=(const Events& source);
 
 	//bool isKeyRepeated();
 

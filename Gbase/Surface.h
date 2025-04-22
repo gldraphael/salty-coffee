@@ -1,7 +1,7 @@
 // 23 September, 2012
 #pragma once
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 #include <string>
 //class GraphicsDevice;
 

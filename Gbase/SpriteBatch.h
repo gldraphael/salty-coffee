@@ -26,35 +26,35 @@ public:
 	// SpriteBatch &operator = (const SpriteBatch& source);
 
 	// Draws surface to destinationRectangle
-	void Draw(Surface& surface, Rectangle& destinationRectangle);
-	void Draw(Surface& surface, Rectangle& destinationRectangle, Color& color);
+	void Draw(const Surface& surface, const Rectangle& destinationRectangle);
+	void Draw(const Surface& surface, const Rectangle& destinationRectangle, const Color& color);
 
 	//     Adds a sprite to a batch of sprites for rendering using the specified surface,
 	//     position and color
-	void Draw(Surface& surface, Point& position);
-	void Draw(Surface& surface, Point& position, Color& color);
+	void Draw(const Surface& surface, const Point& position);
+	void Draw(const Surface& surface, const Point& position, const Color& color);
 
 	//     Adds a sprite to a batch of sprites for rendering using the specified texture,
 	//     destination rectangle, source rectangle, and color.
-	void Draw(Surface& surface, Rectangle& destinationRectangle, Rectangle& sourceRectangle);
-	void Draw(Surface& surface, Rectangle& destinationRectangle, Rectangle& sourceRectangle, Color& color);
+	void Draw(const Surface& surface, const Rectangle& destinationRectangle, const Rectangle& sourceRectangle);
+	void Draw(const Surface& surface, const Rectangle& destinationRectangle, const Rectangle& sourceRectangle, const Color& color);
 
 	//     Adds a sprite to a batch of sprites for rendering using the specified texture,
 	//     position, source rectangle, and color.
-	void Draw(Surface& surface, Point& position, Rectangle& sourceRectangle);
-	void Draw(Surface& surface, Point& position, Rectangle& sourceRectangle, Color& color);
+	void Draw(const Surface& surface, const Point& position, const Rectangle& sourceRectangle);
+	void Draw(const Surface& surface, const Point& position, const Rectangle& sourceRectangle, const Color& color);
 
 	//     Adds a string to a batch of sprites for rendering using the specified font,
 	//     text, position, and color.
-	void DrawString(TTF_Font* spriteFont, std::string& text, Point& position, Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
+	void DrawString(TTF_Font* spriteFont, const std::string& text, const Point& position, const Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
 
 	//     Adds a string to a batch of sprites for rendering using the specified font,
 	//     text, position, and color.
-	void DrawString(TTF_Font* spriteFont, std::stringstream& text, Point& position, Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
+	void DrawString(TTF_Font* spriteFont, const std::stringstream& text, const Point& position, const Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
 
 	//     Adds a string to a batch of sprites for rendering using the specified font,
 	//     text, position, and color.
-	void DrawString(TTF_Font* spriteFont, char* text, Point& position, Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
+	void DrawString(TTF_Font* spriteFont, char* text, const Point& position, const Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
 
 	~SpriteBatch();
 

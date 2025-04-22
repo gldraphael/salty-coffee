@@ -1,6 +1,6 @@
 #include "Surface.h"
 #include "GameBaseException.h"
-#include <Extension/SDL_image.h>
+#include <SDL/SDL_image.h>
 
 //namespace GameBase
 //{

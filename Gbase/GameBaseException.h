@@ -15,7 +15,7 @@
 	public:
 		GameBaseException();
 		GameBaseException(std::string message);
-		const char* what() const;
+		const char* what() const noexcept;
 	};
 //}
 

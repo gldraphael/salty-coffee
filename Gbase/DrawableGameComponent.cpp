@@ -1,6 +1,7 @@
 #include "DrawableGameComponent.h"
 #include "SpriteBatch.h"
 #include "Game.h"
+#include <algorithm>
 //namespace GameBase
 //{
 DrawableGameComponent::DrawableGameComponent(Game* game) : GameComponent(game)

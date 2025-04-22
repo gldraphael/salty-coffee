@@ -1,7 +1,7 @@
 #include "FontManager.h"
 
 #include "GameBaseException.h"
-#include <Extension/SDL_ttf.h>
+#include <SDL/SDL_ttf.h>
 
 //FontManager::FontManager(std::multimap<std::string, std::string, unsigned int> font_size)
 //{

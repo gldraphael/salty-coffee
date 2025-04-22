@@ -4,6 +4,8 @@ struct Mix_Chunk;
 typedef struct _Mix_Music Mix_Music;
 
 #include <map>
+#include <string>
+
 class AudioEngine
 {
 public:
