@@ -54,7 +54,7 @@ public:
 
 	//     Adds a string to a batch of sprites for rendering using the specified font,
 	//     text, position, and color.
-	void DrawString(TTF_Font* spriteFont, char* text, const Point& position, const Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
+	void DrawString(TTF_Font* spriteFont, const char* text, const Point& position, const Color& color,TextRenderMode mode = TextRenderMode::BLENDED);
 
 	~SpriteBatch();
 

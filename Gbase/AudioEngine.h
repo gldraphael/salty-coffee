@@ -39,7 +39,7 @@ private:
 public:
 
 	AudioEngine(int frequency = 22050, AudioEngine::Format format = AudioEngine::Format::DEFAULT, int channels = 2, int sampling_size = 4096);
-	void Load(std::string uid, char* path, AudioEngine::Type type = AudioEngine::Type::SFX);
+	void Load(std::string uid, const char* path, AudioEngine::Type type = AudioEngine::Type::SFX);
 
 	void PlayMusic(std::string uid, int times = -1);
 	void PauseMusic();

@@ -7,5 +7,5 @@ public:
 		OK,
 		YES_NO
 	};
-	static bool Show(char* title, char* message, Buttons buttons = Buttons::OK );
+	static bool Show(const char* title, const char* message, Buttons buttons = Buttons::OK );
 };

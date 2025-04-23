@@ -1,7 +1,7 @@
 #include "Message.h"
 // #include <Windows.h>
 
-bool Message::Show(char* title, char* message, Buttons buttons)
+bool Message::Show(const char* title, const char* message, Buttons buttons)
 {
 	// auto arg = MB_OK;
 	// int result;

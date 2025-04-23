@@ -31,22 +31,22 @@ void Color::A(unsigned int A)
 	_A = MathHelper::clamp<unsigned int>(A,static_cast<unsigned int>(0),static_cast<unsigned int>(255));
 }
 
-unsigned int Color::R()
+unsigned int Color::R() const
 {
 	return _R;
 }
 
-unsigned int Color::G()
+unsigned int Color::G() const
 {
 	return _G;
 }
 
-unsigned int Color::B()
+unsigned int Color::B() const
 {
 	return _B;
 }
 
-unsigned int Color::A()
+unsigned int Color::A() const
 {
 	return _A;
 }
@@ -55,7 +55,7 @@ unsigned int Color::A()
 
 #pragma region operators
 
-Color::operator SDL_Color ()
+Color::operator SDL_Color () const
 {
 	SDL_Color xyz;
 	xyz.r = _R;

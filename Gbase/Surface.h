@@ -41,13 +41,13 @@
 		Surface& operator= (const Surface& source);
 
 		// Returns the SDL_Surface* associated with the Surface object
-		SDL_Surface* GetSurface();
+		SDL_Surface* GetSurface() const;
 		// Returns a copy of the current surface
 		Surface GetCopy();
 		// Returns the Width of the Surface
-		int Width();
+		int Width() const;
 		// Returns the Height of the Surface
-		int Height();
+		int Height() const;
 
 		// Scales an SDL Surface to the required width x height.
 		// Executes slowly. Consider calling this during Splash Screens.

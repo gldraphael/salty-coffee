@@ -68,7 +68,7 @@ void SpriteBatch::DrawString(TTF_Font* font, const std::stringstream& text, cons
 		Draw(Surface (TTF_RenderText_Blended(font, text.str().c_str(), color)) ,position);
 }
 
-void SpriteBatch::DrawString(TTF_Font* font, char* text, const Point& position, const Color& color,TextRenderMode mode)
+void SpriteBatch::DrawString(TTF_Font* font, const char* text, const Point& position, const Color& color,TextRenderMode mode)
 {
 	if (text == "")
 		return;

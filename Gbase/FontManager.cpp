@@ -19,7 +19,7 @@ FontManager::FontManager()
 	initialized = true;
 }
 
-bool FontManager::Load(std::string font_name, char* path, unsigned int size, FontManager::Encoding encoding)
+bool FontManager::Load(std::string font_name, const char* path, unsigned int size, FontManager::Encoding encoding)
 {
 	font_list[font_name].font = nullptr;
 	font_list[font_name].font = TTF_OpenFont(path,size);
@@ -57,7 +57,7 @@ void FontManager::SetLineSpacing (std::string font_id, int value_)
 	font_list[font_id].line_spacing = value_;
 }
 
-Point FontManager::MeasureString (std::string font_id, char* string)
+Point FontManager::MeasureString (std::string font_id, const char* string)
 {
 	int x , y;
 

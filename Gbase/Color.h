@@ -21,15 +21,15 @@ public:
 	void A(unsigned int A);
 
 	// Get the red component
-	unsigned int R();
+	unsigned int R() const;
 	// Get the Green Component
-	unsigned int G();
+	unsigned int G() const;
 	// Get the blue component
-	unsigned int B();
+	unsigned int B() const;
 	// Get the alpha component
-	unsigned int A();
+	unsigned int A() const;
 
-	operator SDL_Color ();
+	operator SDL_Color () const;
 
 	// The RGBA for the predefined colors below were taken from Microsoft XNA 4.0's documentation
  	static Color AliceBlue();//	Gets a system-defined color with the value R:240 G:248 B:255 A:255.

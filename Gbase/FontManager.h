@@ -50,7 +50,7 @@ public:
 	// Load the font from path and size. font_name is used as the key to retrieve it
 	// Returns false if error occured.
 	// Using UNICODE will throw a GameBaseException
-	bool Load(std::string font_name, char* path, unsigned int size, Encoding encoding = Encoding::ASCII);
+	bool Load(std::string font_name, const char* path, unsigned int size, Encoding encoding = Encoding::ASCII);
 
 	// Returns the associated TTF_Font*
 	TTF_Font* operator[](std::string font_name);
@@ -66,7 +66,7 @@ public:
 	void SetLineSpacing(std::string font_id, int value_);
 
 	// Returns the area the text will occupy
-	Point MeasureString(std::string font_id, char* string);
+	Point MeasureString(std::string font_id, const char* string);
 
 	// Use this only if you need to unload a font during the game
 	void Unload(std::string font_name);

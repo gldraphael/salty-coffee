@@ -147,7 +147,7 @@ void Game::UnloadContent()
 
 #pragma endregion
 
-void Game::SetTitle(char* title)
+void Game::SetTitle(const char* title)
 {
 	SDL_WM_SetCaption(title,"GB");
 }

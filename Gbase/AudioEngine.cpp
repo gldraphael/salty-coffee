@@ -26,7 +26,7 @@ AudioEngine::~AudioEngine(void)
 	}
 }
 
-void AudioEngine::Load(std::string uid, char* path, AudioEngine::Type type)
+void AudioEngine::Load(std::string uid, const char* path, AudioEngine::Type type)
 {
 	switch (type)
 	{

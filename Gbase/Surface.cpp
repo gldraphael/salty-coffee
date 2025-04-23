@@ -46,7 +46,7 @@ Surface& Surface::operator= (const Surface& source)
 	return *this;
 }
 
-SDL_Surface* Surface::GetSurface()
+SDL_Surface* Surface::GetSurface() const
 {
 	return this->_surface;
 }
@@ -62,12 +62,12 @@ Surface Surface::GetCopy()
 	return s;
 }
 
-int Surface::Width()
+int Surface::Width() const
 {
 	return _surface->w;
 }
 
-int Surface::Height()
+int Surface::Height() const
 {
 	return _surface->h;
 }

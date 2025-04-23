@@ -67,7 +67,7 @@ public:
 	void SetPreferredResolution(Point Width_height, unsigned int bits_per_pixel, bool fullscreen = false);
 
 	// Set the Window's Title
-	void SetTitle(char* title);
+	void SetTitle(const char* title);
 
 	// Returns the bottom right Point of the window from which the Width and Height can be obtained
 	Point GetScreenBounds();
