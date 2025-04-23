@@ -2,7 +2,9 @@
 
 An SDL/C++ project I worked on as part of a college CIA (Cumulative Internal Assessment) assignment. 
 
-I found its source code in my Google Drive account. While it's not code I'm particularly proud of, I wanted to get it running just because.
+I found its source code in my Google Drive account. I'm not really proud of the code -- it's full of glaring mistakes. And the story is cringe. But I still wanted to get it working, just because.
+
+![Screenshot](./screenshots/screenshot.png)
 
 ## Building the project
 
