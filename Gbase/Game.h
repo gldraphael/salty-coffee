@@ -60,7 +60,7 @@ public:
 	// A map of Services
 	// Load Stuff and register them as a service by reinterpret_cast<Component*>
 	// You'll need to cast it back while getting it back
-	std::map<char*,Component*> Services;
+	std::map<std::string,Component*> Services;
 
 	// Must be called before Game::Initialize to take effect
 	// Sets the preferred screen resolution for the game
