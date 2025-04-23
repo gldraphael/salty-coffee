@@ -19,7 +19,16 @@ The following instructions were tested on Ubuntu 22.04
 		libsdl-ttf2.0-dev
 	```
 2. Install `cmake`:
-  ```sh
-  sudo apt install cmake
-  ```
-
+	```sh
+	sudo apt install cmake
+	```
+3. Build the app:
+	```sh
+	cmake .
+	make
+	```
+4. Run the app:
+	```sh
+	cd ./bin
+	./salty-coffee
+	```
